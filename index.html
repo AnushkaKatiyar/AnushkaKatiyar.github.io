@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anushka Katiyar — ML Engineer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- floating pixel shapes -->
+  <div class="pixel-bg" aria-hidden="true">
+    <span class="pixel p1"></span>
+    <span class="pixel p2"></span>
+    <span class="pixel p3"></span>
+    <span class="pixel p4"></span>
+    <span class="pixel p5"></span>
+    <span class="pixel p6"></span>
+    <span class="pixel p7"></span>
+    <span class="pixel p8"></span>
+  </div>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo pixel-font">AK</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+    <ul class="nav-mobile" id="nav-mobile">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-scene" aria-hidden="true">
+      <div class="hero-ground"></div>
+      <div class="hero-trees">
+        <svg class="tree tree-1" viewBox="0 0 40 60" xmlns="http://www.w3.org/2000/svg"><polygon points="20,2 38,30 28,30 35,50 5,50 12,30 2,30" fill="#4a8a50"/><rect x="17" y="50" width="6" height="10" fill="#7c5c3e"/></svg>
+        <svg class="tree tree-2" viewBox="0 0 48 64" xmlns="http://www.w3.org/2000/svg"><polygon points="24,2 44,28 34,28 40,48 8,48 14,28 4,28" fill="#6aab6e"/><rect x="20" y="48" width="8" height="12" fill="#7c5c3e"/></svg>
+        <svg class="tree tree-3" viewBox="0 0 36 56" xmlns="http://www.w3.org/2000/svg"><polygon points="18,2 34,28 26,28 32,46 4,46 10,28 2,28" fill="#3d7a44"/><rect x="15" y="46" width="6" height="10" fill="#6e503a"/></svg>
+        <svg class="tree tree-4" viewBox="0 0 40 60" xmlns="http://www.w3.org/2000/svg"><polygon points="20,2 38,30 28,30 35,50 5,50 12,30 2,30" fill="#5a9e60"/><rect x="17" y="50" width="6" height="10" fill="#7c5c3e"/></svg>
+        <svg class="tree tree-5" viewBox="0 0 44 62" xmlns="http://www.w3.org/2000/svg"><polygon points="22,2 42,30 32,30 38,50 6,50 12,30 2,30" fill="#4a8a50"/><rect x="18" y="50" width="8" height="12" fill="#7c5c3e"/></svg>
+      </div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-avatar-wrap">
+        <div class="avatar-frame">
+          <img src="assets/profile.jpg" alt="Anushka Katiyar" class="avatar-img" id="avatar-img" />
+          <div class="avatar-placeholder" id="avatar-placeholder">
+            <i class="fa-solid fa-user"></i>
+          </div>
+        </div>
+        <div class="avatar-badge">ML Engineer</div>
+      </div>
+      <div class="hero-text">
+        <p class="hero-greeting pixel-font">Hello, world!</p>
+        <h1 class="hero-name">Anushka Katiyar</h1>
+        <div class="hero-typewriter">
+          <span id="typewriter-text"></span><span class="cursor">|</span>
+        </div>
+        <p class="hero-bio">MS ECE @ USC &middot; ML Intern @ NREL &middot; Building intelligent systems that actually work in the real world.</p>
+        <div class="hero-btns">
+          <a href="assets/resume.pdf" download class="btn btn-primary">
+            <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+          </a>
+          <a href="#contact" class="btn btn-secondary">
+            <i class="fa-solid fa-envelope"></i> Get in Touch
+          </a>
+        </div>
+        <div class="hero-social">
+          <a href="https://github.com/AnushkaKatiyar" target="_blank" rel="noopener" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/anushkakatiyar1/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:akatiyar@usc.edu" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span class="pixel-font" style="font-size:0.5rem">scroll</span>
+      <i class="fa-solid fa-chevron-down bounce"></i>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="section-header">
+      <h2 class="pixel-font section-title">About Me</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-card card">
+        <p>Hi! I'm Anushka &mdash; an ML engineer who loves turning messy real-world data into systems that actually work. Currently pursuing my MS in ECE (ML &amp; Data Science) at USC while interning at the National Renewable Energy Lab, where I'm building probabilistic solar forecasting models.</p>
+        <p>Before grad school, I spent 2+ years at Bharti Airtel as a Data Scientist, deploying LSTM models, NLP pipelines, and analytics portals serving millions of B2B customers across India.</p>
+        <p>When I'm not training models, you'll find me exploring cozy games, hiking, or obsessing over a good cup of tea.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card card">
+          <span class="stat-num">4+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-card card">
+          <span class="stat-num">10+</span>
+          <span class="stat-label">ML Projects</span>
+        </div>
+        <div class="stat-card card">
+          <span class="stat-num">3</span>
+          <span class="stat-label">Research Roles</span>
+        </div>
+        <div class="stat-card card">
+          <span class="stat-num">1M+</span>
+          <span class="stat-label">B2B Customers Impacted</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section section-alt">
+    <div class="section-header">
+      <h2 class="pixel-font section-title">Experience</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="timeline">
+
+      <div class="timeline-item" data-aos>
+        <div class="timeline-dot"><i class="fa-solid fa-flask"></i></div>
+        <div class="timeline-card card">
+          <div class="timeline-meta">
+            <span class="tl-date"><i class="fa-regular fa-calendar"></i> May 2026 – Present</span>
+            <span class="tl-location"><i class="fa-solid fa-location-dot"></i> Golden, CO</span>
+          </div>
+          <h3>ML Graduate Intern</h3>
+          <h4>National Laboratory of the Rockies <span class="tl-tag">(prev. NREL)</span></h4>
+          <ul>
+            <li>Built physics-informed probabilistic solar forecasting using Mixture-of-Experts (MoE), clear-sky modeling &amp; deep learning — reducing intra-hour PV forecast error by 15%+</li>
+            <li>Developed multi-source PV forecasting pipeline with cloud impact tracking &amp; vendor forecast fusion, improving quantile accuracy by 20%+ under volatile weather</li>
+          </ul>
+          <div class="tl-tags"><span>MoE</span><span>Deep Learning</span><span>Solar Forecasting</span><span>PyTorch</span></div>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos>
+        <div class="timeline-dot"><i class="fa-solid fa-wifi"></i></div>
+        <div class="timeline-card card">
+          <div class="timeline-meta">
+            <span class="tl-date"><i class="fa-regular fa-calendar"></i> Sep 2025 – Present</span>
+            <span class="tl-location"><i class="fa-solid fa-location-dot"></i> Los Angeles, CA</span>
+          </div>
+          <h3>Graduate Research Assistant &mdash; WiDES</h3>
+          <h4>University of Southern California</h4>
+          <ul>
+            <li>Designed MLP &amp; residual CNN pipelines for indoor WiFi localization from spectral features — improving accuracy by ~25%</li>
+            <li>Applied LoRA-based PEFT to a localization transformer, cutting trainable parameters by 98% and achieving ~2.37m RMSE across 3 buildings and 11 devices</li>
+          </ul>
+          <div class="tl-tags"><span>LoRA</span><span>CNN</span><span>WiFi CSI</span><span>MATLAB</span></div>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos>
+        <div class="timeline-dot"><i class="fa-solid fa-microchip"></i></div>
+        <div class="timeline-card card">
+          <div class="timeline-meta">
+            <span class="tl-date"><i class="fa-regular fa-calendar"></i> Sep 2025 – Feb 2026</span>
+            <span class="tl-location"><i class="fa-solid fa-location-dot"></i> Los Angeles, CA</span>
+          </div>
+          <h3>Graduate Research Assistant &mdash; E2S2C</h3>
+          <h4>University of Southern California</h4>
+          <ul>
+            <li>Built agentic AI pipeline with Gemini 2.5 API for automated Verilog code generation, achieving 47% one-shot accuracy on NVIDIA CVDP benchmark</li>
+            <li>Designed multi-agent architectures reducing context window tokens by 50% through reinforcement-optimized policies</li>
+          </ul>
+          <div class="tl-tags"><span>Agentic AI</span><span>Gemini API</span><span>Verilog</span><span>Multi-Agent</span></div>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos>
+        <div class="timeline-dot"><i class="fa-solid fa-rocket"></i></div>
+        <div class="timeline-card card">
+          <div class="timeline-meta">
+            <span class="tl-date"><i class="fa-regular fa-calendar"></i> May 2025 – Aug 2025</span>
+            <span class="tl-location"><i class="fa-solid fa-location-dot"></i> Marina Del Rey, CA</span>
+          </div>
+          <h3>AI/ML Engineer Intern</h3>
+          <h4>Solace Technologies</h4>
+          <ul>
+            <li>Prototyped AI-driven cost &amp; schedule prediction MVP for aerospace projects using XGBoostRegressor — 93% accuracy across 200+ projects</li>
+            <li>Integrated RAG with Mistral 13B, FAISS &amp; LangChain for unstructured document retrieval; deployed with Airflow, MLflow &amp; AWS SageMaker</li>
+          </ul>
+          <div class="tl-tags"><span>XGBoost</span><span>RAG</span><span>FAISS</span><span>AWS SageMaker</span></div>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-aos>
+        <div class="timeline-dot"><i class="fa-solid fa-chart-line"></i></div>
+        <div class="timeline-card card">
+          <div class="timeline-meta">
+            <span class="tl-date"><i class="fa-regular fa-calendar"></i> Aug 2022 – Oct 2024</span>
+            <span class="tl-location"><i class="fa-solid fa-location-dot"></i> Gurugram, India</span>
+          </div>
+          <h3>Data Scientist &rarr; Manager</h3>
+          <h4>Bharti Airtel</h4>
+          <ul>
+            <li>Deployed LSTM fiber monitoring model reducing network downtime by 30%; integrated BERT-powered NLP for customer communication automation (25% fewer interactions)</li>
+            <li>Built nationwide tower growth/degrowth prediction model (ARIMA + regression) at 93% accuracy, driving 45% resource optimization</li>
+            <li>Launched assurance analytics portal with IBM — real-time KPI tracking for ~1M B2B customers across 25 circles</li>
+          </ul>
+          <div class="tl-tags"><span>LSTM</span><span>BERT</span><span>ARIMA</span><span>Geospatial</span><span>Tableau</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="section-header">
+      <h2 class="pixel-font section-title">Projects</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card card" data-aos>
+        <div class="project-icon"><i class="fa-solid fa-brain"></i></div>
+        <h3>REFLECT-RL</h3>
+        <p class="project-subtitle">Reinforced Reflexion with RAG-Enhanced Retrieval &amp; RPO-Guided Adaptive Memory Optimization</p>
+        <p>Self-improving RL framework for autonomous code synthesis using FAISS-based RAG, iterative feedback loops, and CodeLlama 7B. Achieved 62% improvement in HumanEval benchmark accuracy across 161 programming tasks.</p>
+        <div class="tl-tags"><span>CodeLlama 7B</span><span>FAISS</span><span>RAG</span><span>RL</span><span>RPO</span></div>
+        <div class="project-links">
+          <a href="https://github.com/AnushkaKatiyar" target="_blank" rel="noopener" class="btn btn-sm">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card card" data-aos>
+        <div class="project-icon"><i class="fa-solid fa-cloud-rain"></i></div>
+        <h3>Weather-Driven Collision Risk Forecasting</h3>
+        <p class="project-subtitle">Northeast Big Data Innovation Hub &amp; Columbia University</p>
+        <p>Spatio-temporal analysis on 1M+ NYC collision records. Integrated OpenWeather API to correlate 500k+ data points with collision rates — identified 20% higher crash likelihood during rain and proposed safety improvements to the DOT.</p>
+        <div class="tl-tags"><span>Time Series</span><span>Geospatial</span><span>OpenWeather API</span><span>Python</span></div>
+        <div class="project-links">
+          <a href="https://github.com/AnushkaKatiyar" target="_blank" rel="noopener" class="btn btn-sm">
+            <i class="fa-brands fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="project-card card project-placeholder" data-aos>
+        <div class="project-icon"><i class="fa-solid fa-seedling"></i></div>
+        <h3>More Coming Soon</h3>
+        <p class="project-subtitle">Currently in progress...</p>
+        <p>More projects are on the way. Check back soon or visit GitHub for the latest work!</p>
+        <div class="project-links">
+          <a href="https://github.com/AnushkaKatiyar" target="_blank" rel="noopener" class="btn btn-sm">
+            <i class="fa-brands fa-github"></i> All Repos
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="section-header">
+      <h2 class="pixel-font section-title">Skills</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="skills-grid">
+
+      <div class="skill-group card" data-aos>
+        <h3><i class="fa-solid fa-code"></i> Languages</h3>
+        <div class="skill-tags">
+          <span>Python</span><span>C++</span><span>SQL</span><span>MATLAB</span><span>JavaScript</span>
+        </div>
+      </div>
+
+      <div class="skill-group card" data-aos>
+        <h3><i class="fa-solid fa-fire"></i> ML &amp; Deep Learning</h3>
+        <div class="skill-tags">
+          <span>PyTorch</span><span>TensorFlow</span><span>scikit-learn</span><span>XGBoost</span>
+          <span>HuggingFace</span><span>LoRA/PEFT</span><span>LangChain</span><span>FAISS</span>
+        </div>
+      </div>
+
+      <div class="skill-group card" data-aos>
+        <h3><i class="fa-solid fa-chart-bar"></i> Data &amp; Analytics</h3>
+        <div class="skill-tags">
+          <span>Pandas</span><span>NumPy</span><span>Tableau</span><span>GeoPandas</span>
+          <span>Matplotlib</span><span>Seaborn</span><span>Folium</span>
+        </div>
+      </div>
+
+      <div class="skill-group card" data-aos>
+        <h3><i class="fa-solid fa-cloud"></i> MLOps &amp; Cloud</h3>
+        <div class="skill-tags">
+          <span>AWS SageMaker</span><span>MLflow</span><span>Airflow</span><span>Docker</span>
+          <span>Git</span><span>Google Colab</span>
+        </div>
+      </div>
+
+      <div class="skill-group card" data-aos>
+        <h3><i class="fa-solid fa-layer-group"></i> Domains</h3>
+        <div class="skill-tags">
+          <span>Time Series Forecasting</span><span>NLP</span><span>Computer Vision</span>
+          <span>Agentic AI</span><span>RAG</span><span>Geospatial ML</span><span>Signal Processing</span>
+        </div>
+      </div>
+
+      <div class="skill-group card" data-aos>
+        <h3><i class="fa-solid fa-certificate"></i> Certifications</h3>
+        <div class="skill-tags">
+          <span>ML Specialization &mdash; Stanford / DeepLearning.AI</span>
+          <span>Data Analytics &amp; VR &mdash; NASSCOM</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="section-header">
+      <h2 class="pixel-font section-title">Say Hello</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="contact-wrap">
+      <div class="contact-card card">
+        <p class="contact-sub">I'm always open to research collaborations, internship chats, or just talking about cool ML ideas. Drop me a line!</p>
+        <div class="contact-links">
+          <a href="mailto:akatiyar@usc.edu" class="contact-link">
+            <span class="contact-icon"><i class="fa-solid fa-envelope"></i></span>
+            <span>akatiyar@usc.edu</span>
+          </a>
+          <a href="https://linkedin.com/in/anushkakatiyar1/" target="_blank" rel="noopener" class="contact-link">
+            <span class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></span>
+            <span>linkedin.com/in/anushkakatiyar1</span>
+          </a>
+          <a href="https://github.com/AnushkaKatiyar" target="_blank" rel="noopener" class="contact-link">
+            <span class="contact-icon"><i class="fa-brands fa-github"></i></span>
+            <span>github.com/AnushkaKatiyar</span>
+          </a>
+        </div>
+        <a href="assets/resume.pdf" download class="btn btn-primary" style="margin-top:1.5rem">
+          <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <span class="pixel-font" style="font-size:0.5rem">Anushka Katiyar &copy; 2025</span>
+      <span>Made with care in Los Angeles</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
