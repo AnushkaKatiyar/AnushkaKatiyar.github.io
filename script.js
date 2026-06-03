@@ -45,7 +45,7 @@ function type() {
 }
 type();
 
-// ── Profile image fallback ──
+// ── Profile image fallback (only hide on actual load error) ──
 const avatarImg = document.getElementById('avatar-img');
 const avatarPlaceholder = document.getElementById('avatar-placeholder');
 if (avatarImg) {
@@ -53,11 +53,6 @@ if (avatarImg) {
     avatarImg.style.display = 'none';
     avatarPlaceholder.style.display = 'flex';
   });
-  // If src is empty or file not found
-  if (!avatarImg.src || avatarImg.src.endsWith('profile.jpg') && avatarImg.naturalWidth === 0) {
-    avatarImg.style.display = 'none';
-    avatarPlaceholder.style.display = 'flex';
-  }
 }
 
 // ── Scroll-triggered animations (AOS-lite) ──
